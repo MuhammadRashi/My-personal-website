@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Rashid</title>
     <link rel="icon" href="Images/Logo.png" type="image/gif" sizes="16x16" >
     <!--Bootstrap link connecting -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="mystyle.css">
+    <!-- <script src="myJs.js"></script> -->
+    
 </head>
-<body>
+<body >
     <header class="bg-secondary " style="position: fixed; width: 100%; z-index: 1;">
         <!--first create row -->
 
         <div class="row text-info" >
-            <div class="col-9 col-md-6 p-3 pl-4">
+            <div class="col-8 col-md-6 pt-3 pl-4">
                 <!-- <h2>Muhammad Rashid</h2> -->
                 <div class="wavy" id="wave" >
                     
@@ -38,26 +40,31 @@
                
             </div>
 
-            <div class="col-md-6 col-3 my-auto" >
-                <nav class="navbar navbar-expand-lg navbar-light ml-auto ">
+            <div class="col-md-6 col-4 ml-auto">
+                <nav class="navbar navbar-expand-lg navbar-light">
                     
-                    <button class=" ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
+                    <!-- <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+                      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+                        <span class="navbar-toggler-icon "></span>
                     </button>
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">  <!-- ml-auto used for align navebar to right-->
                         <li class="nav-item active">
-                          <a class="nav-link text-info textcss" href="#">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link text-info" href="#home-section">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-info textcss" href="#">Services</a>
+                          <a class="nav-link text-info" href="#service-section">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-info textcss" href="#">Experience</a>
+                            <a class="nav-link text-info" href="#experience-section">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-info textcss" href="#">Contact</a>
+                            <a class="nav-link text-info" href="#photo-section">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#contact-section">Contact</a>
                         </li>
                       </ul>
                       
@@ -66,14 +73,14 @@
             </div>
         </div>
     </header>
-    <section class="p-5 secback">   
+    <section class="p-5 secback pl-4" id="home-section">   
         <div class="container ">
             <div class="row align-items-center">
                 <div class="col-md-4  " >
                     <img class="img-fluid cardcss " src="Images/myph2.jpg" alt="" style="margin-top: 2em;" >
                 </div>
                 <div class="col-md-6">
-                    <h4 class="pl-4 secondary">Professional Accountant,<br> UL Cyber park<br>Calicut</h4>
+                    <h4 class="pl-4 p-4 text-white textcss">Web Developer & <br> Financial Officer,<br> UL Cyberpark<br>Calicut <br> Kerala </h4>
 
                 </div>
             </div>
@@ -81,81 +88,164 @@
         
     </section>
 
-    <section class="secback">
+    <section class="secback" id="service-section">
  
     <div class="container p-3  ">
-    <h3  class="text-center p-2 text-secondary">Services</h3>
+    <h3  class="text-center p-2 text-secondary" >Services</h3>
     <div class="row" >
             <div class="col-md-4 pt-3 " >
-                <div class="card text-center p-4 bg-secondary text-info cardcss" >
+                <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
                         <!-- <i class="fas fa-user-tie display-1 text-white"></i>  file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>> -->
                            
-                            <img src="https://library.kissclipart.com/20180902/zbe/kissclipart-html-css-js-clipart-cascading-style-sheets-javascr-3b2d7284409d411e.png" class="img-fluid imgcard" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">HTML:5</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <img src="https://library.kissclipart.com/20180902/zbe/kissclipart-html-css-js-clipart-cascading-style-sheets-javascr-3b2d7284409d411e.png" class="img-fluid imgcard img-responsive" alt="...">
+                           
+                            
+                            <div class="overlay">
+                                <h2></h2>
+                                <a class="info" href="#">“front-end languages” - HTML handles the basic structure and ‘bones’ of Web page, while CSS handles the style and appearance. JavaScript (JS) is used mainly for enhancing the interaction of a user with the webpage. In other words, make webpage more lively and interactive, with the help of JavaScript</a>
+                            </div>
                         
-                        </div>
+                            <div class="card-body">
+                            <h5 class="card-title">HTML:5 | CSS | JS </h5>
+                            <p class="card-text">HTML handles the basic structure and ‘bones’ of Web page, while CSS handles the style and appearance.</p>
+                        
+                            </div>
+                        <div class="text-center" style="width: 300px;">
+                            <div class="progress center-block">
+                              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="" aria-valuemax="100" style="max-width: 90%">
+                              <span class="title1" >Web Design 90%</span>
+                              </div>
+                            </div>
+                          </div>
                 </div>
          
             </div>
         <div class="col-md-4 pt-3" >
-            <div class="card text-center p-4 bg-secondary text-info cardcss" >
-                <img src="https://splendornet.com/wp-content/uploads/2019/01/django.png" class="img-fluid imgcard" alt="...">  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
+            <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
+                <img src="https://splendornet.com/wp-content/uploads/2019/01/django.png" class="img-fluid imgcard img-responsive" alt="...">  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
                         <img src="..." class="card-img-top" alt="...">-->
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="overlay">
+                            <h2></h2>
+                            <a class="info" href="#">Python is a high-level, interpreted, interactive and object-oriented scripting language. Django is the most popular Python framework</a>
+                        </div>
+                    
+                
+                
+                        <div class="card-body">
+                    <h5 class="card-title">PYTHON | DJANGO</h5>
+                    <p class="card-text">Python is a high-level, interpreted, interactive and object-oriented scripting language</p>
                 
                 </div>
+                <div style="width: 300px;">
+                    <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="" aria-valuemax="100" style="max-width: 65%">
+                      <span class="title1" >Web Ddevelopment 65%</span>
+                      </div>
+                    </div>
+                  </div>
         </div>
      
    </div>
    <div class="col-md-4 pt-3" >
-        <div class="card text-center p-4 bg-secondary text-info cardcss" >
-            <img src="https://www.icoldo.com/wordpress/wp-content/uploads/2018/02/js_node_js_react_logos-300x225.png" class="img-fluid imgcard" alt="...">  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
+        <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
+            <img src="https://www.icoldo.com/wordpress/wp-content/uploads/2018/02/js_node_js_react_logos-300x225.png" class="img-fluid imgcard img-responsive" alt="...">  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
                     <img src="..." class="card-img-top" alt="...">-->
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="overlay">
+                        <h2></h2>
+                        <a class="info" href="#">Node. js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices. Node. js is an open source, cross-platform runtime environment for developing server-side and networking applications.</a>
+                    </div>
+                
+                
+                    <div class="card-body">
+                    <h5 class="card-title">NODE JS | REACT</h5>
+                    <p class="card-text">Node. js uses an event-driven, non-blocking I/O model</p>
                 
                 </div>
+                <div style="width: 300px;">
+                    <div class="progress">
+                      <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="" aria-valuemax="100" style="max-width: 70%">
+                      <span class="title1" >Web Ddevelopment 70%</span>
+                      </div>
+                    </div>
+                  </div>
         </div>
  
     </div>
 <div class="col-md-4 pt-3" >
-    <div class="card text-center p-4 bg-secondary  cardcss" >
-        <img src="https://powerbicdn.azureedge.net/cvt-9edb22a0288b2e8cc3582130b6472e07b77db480d51cf6ffa6c2b615dba080a1/pictures/shared/integrations/2x/microsoft-dynamics-nav@2x.png" class="img-fluid imgcard" alt="...">  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
+    <div class="card text-center p-4 bg-secondary text-primary  cardcss hovereffect" >
+        <img src="https://powerbicdn.azureedge.net/cvt-9edb22a0288b2e8cc3582130b6472e07b77db480d51cf6ffa6c2b615dba080a1/pictures/shared/integrations/2x/microsoft-dynamics-nav@2x.png" class="img-fluid imgcard img-responsive" alt="...">  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
                  <img src="..." class="card-img-top" alt="...">-->
+                 <div class="overlay">
+                    <h2></h2>
+                    <a class="info" href="https://www.isystems-group.com/solutions/microsoft-dynamics-nav/">Microsoft Dynamics NAV is an enterprise resource planning (An ERP) app from Microsoft. Efficiently manage accounting, inventory and cash flows, control fixed assets, process receivables, operate with multiple currencies, locations and companies..</a>
+                </div>
+
+
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">MS DYNAMICS NAV</h5>
+            <p class="card-text">Microsoft Dynamics NAV is an enterprise resource planning (An ERP) app from Microsoft.</p>
         
         </div>
+        <div style="width: 300px;">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="" aria-valuemax="100" style="max-width: 85%">
+              <span class="title1" >NAV 85%</span>
+              </div>
+            </div>
+          </div>
   </div>
  
 </div>
 <div class="col-md-4 pt-3" >
-     <div class="card text-center p-4 bg-secondary  cardcss" >
-        <img src="Images/footer-logo.png" class="img-fluid imgcard" alt="..."> <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
+     <div class="card text-center p-4 bg-secondary text-primary cardcss hovereffect"  >
+        <img src="Images/footer-logo.png" class="img-fluid imgcard img-responsive" alt="..."> <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
                  <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <div class="overlay">
+                    <h2></h2>
+                    <a class="info" href="https://www.mycomsys.com/retail_management_system.html">MYCOM has fully integrated easy to use,highly functional accounting system for the entire accounting department.</a>
+                </div>
+
+        
+        
+                 <div class="card-body">
+            <h5 class="card-title">MYCOM</h5>
+            <p class="card-text">MYCOM has fully integrated easy to use,highly functional accounting system </p>
         
         </div>
+        <div style="width: 300px;">
+            <div class="progress">
+              <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="" aria-valuemax="100" style="max-width: 75%">
+              <span class="title1" >My COM 75%</span>
+              </div>
+            </div>
+          </div>
   </div>
  
 </div>
 <div class="col-md-4 pt-3" >
-    <div class="card text-center p-4 bg-secondary  cardcss" >
-        <img src="https://resources.tallysolutions.com/wp-content/themes/tally/assets/images/logo.svg" class="img-fluid imgcard" alt="...">
+    <div class="card text-center p-4 bg-secondary text-primary  cardcss hovereffect" >
+        <img src="https://resources.tallysolutions.com/wp-content/themes/tally/assets/images/logo.svg" class="img-fluid imgcard img-responsive" alt="...">
+        
+        <div class="overlay">
+            <h2></h2>
+            <a class="info" href="https://www.mycomsys.com/retail_management_system.html">Tally is powerful accounting software, which is driven by a technology called concurrent multi-lingual accelerated technology engine. ... Tally provides comprehensive solution around accounting principles, inventory and data integrity. Tally also has feature encompassing global business...</a>
+        </div>
+        
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">TALLY</h5>
+            <p class="card-text">Tally is powerful accounting software, which is driven by a technology called concurrent</p>
         
         </div>
+        <div style="width: 300px;">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="" aria-valuemax="100" style="max-width: 85%">
+              <span class="title1" >Tally 85%</span>
+              </div>
+            </div>
+          </div>
     </div>
+
+    
  
 </div>
 
@@ -164,166 +254,146 @@
 </div>
 </section>
 
+
+
+
  <!-- Experience -->
-<section class="secback">
+<section class="secback" id="experience-section">
  
     <div class="container p-3  ">
     <h3  class="text-center p-2 text-secondary">Experience</h3>
     <div class="row" >
             <div class="col-md-4 pt-3 " >
-                <div class="card text-center p-4 bg-secondary text-info cardcss" >
-                        <i class="fas fa-user-tie display-1 text-white"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
+                <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
+                    <img src="Images/crossroad.jpg" class="img-fluid imgcard img-responsive" alt="...">  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
                             <img src="..." class="card-img-top" alt="...">-->
+                            <div class="overlay">
+                                <h2></h2>
+                                <a class="info" href="#">I completed CROSS ROADS Web Design Challenge using through HTML:5 | CSS | JS for static website.</a>
+                            </div>
+
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">CROSS ROADS</h5>
+                            <p class="card-text">CROSS ROADS Web Design Challenge for static website <br>.</p>
                         
                         </div>
                 </div>
          
             </div>
         <div class="col-md-4 pt-3" >
-            <div class="card text-center p-4 bg-secondary text-info cardcss" >
-                <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
+            <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
+                <img src="Images/CF.jpg" class="img-fluid imgcard img-responsive" alt="...">   <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
                         <img src="..." class="card-img-top" alt="...">-->
+                        <div class="overlay">
+                            <h2></h2>
+                            <a class="info" href="http://www.cityflowerretail.com/">I have 4 year Financial Accounting experience in City Flower Retail Market in Saudi Arabia, During this time i used Microsoft NAV, MyCom, Tally and other softwares</a>
+                        </div>
+
+
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">CITY FLOWER</h5>
+                    <p class="card-text">City Flower Retail business [23 Stores with 4 Hyper Markets] in Saudia Arebia and Bahrain.</p>
                 
                 </div>
         </div>
      
    </div>
    <div class="col-md-4 pt-3" >
-        <div class="card text-center p-4 bg-secondary text-info cardcss" >
-                <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
+        <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
+            <img src="Images/CFB.png" class="img-fluid imgcard img-responsive" alt="...">  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
                     <img src="..." class="card-img-top" alt="...">-->
+
+                    <div class="overlay">
+                        <h2></h2>
+                        <a class="info" href="http://www.cityflowerretail.com/">I am working as Financial Accounting  in CFB Solutions, UL Cyberpark, Calicut, with the help of Microsoft NAV, MyCom, Tally and other softwares</a>
+                    </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">CFB Solution</h5>
+                    <p class="card-text">CFB Solution is Service Exporting firm in UL Cyberpark Calicut <br>.</p>
                 
                 </div>
         </div>
  
     </div>
-<div class="col-md-4 pt-3" >
-    <div class="card text-center p-4  text-info cardcss" >
-        <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
-                 <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        
-        </div>
-  </div>
- 
-</div>
-<div class="col-md-4 pt-3" >
-    <div class="card text-center p-4" >
-        <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
-                 <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        
-        </div>
-  </div>
- 
-</div>
-<div class="col-md-4 pt-3" >
-    <div class="card text-center p-4" >
-        <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
-                 <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        
-        </div>
-    </div>
- 
-</div>
 
-       
-    </div>
-</div>
 </section>
 
 
 <!-- Projects -->
-<section class="secback">
+<section class="secback" id="photo-section">
  
     <div class="container p-3  ">
-    <h3  class="text-center p-2 text-secondary">Projects</h3>
+    <h3  class="text-center p-2 text-secondary">Photos</h3>
     <div class="row" >
             <div class="col-md-4 pt-3 " >
-                <div class="card text-center p-4 bg-secondary text-info cardcss" >
-                        <i class="fas fa-user-tie display-1 text-white"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
-                            <img src="..." class="card-img-top" alt="...">-->
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
+                        <!-- <i class="fas fa-user-tie display-1 text-white"></i>  file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>> -->
+                            <img src="Images/MyPhotos/ph1.jpg" class="card-img-top img-responsive" alt="...">
+                                    <div class="overlay">
+                                        <h2></h2>
+                                        <a class="info" href="#">CITY FLOWER Saudi Arabia - Employee of The year Award 2017 - Finance</a>
+                                    </div>
+                        <!-- <div class="card-body">
+                            <h5 class="card-title">City Flower</h5>
+                            <p class="card-text">Employee of the year 2017 - Finanace</p>
                         
-                        </div>
+                        </div> -->
                 </div>
          
             </div>
         <div class="col-md-4 pt-3" >
             <div class="card text-center p-4 bg-secondary text-info cardcss" >
-                <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
-                        <img src="..." class="card-img-top" alt="...">-->
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                
-                </div>
+                        <img src="Images/MyPhotos/ph2.jpg" class="card-img-top" alt="...">
+                        <!-- <div class="card-body">
+                            <h5 class="card-title">City Flower</h5>
+                            <p class="card-text">Employee of the year 2017 - Finanace</p>
+                        </div> -->
         </div>
      
    </div>
    <div class="col-md-4 pt-3" >
         <div class="card text-center p-4 bg-secondary text-info cardcss" >
-                <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
-                    <img src="..." class="card-img-top" alt="...">-->
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                
-                </div>
+            <img src="Images/MyPhotos/ph6.jpg" class="card-img-top" alt="...">
+            <!-- <div class="card-body">
+                <h5 class="card-title">City Flower</h5>
+                <p class="card-text">Employee of the year 2017 - Finanace</p>
+            </div> -->
         </div>
  
     </div>
 <div class="col-md-4 pt-3" >
-    <div class="card text-center p-4  text-info cardcss" >
-        <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
-                 <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
+    <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
+        <!-- <i class="fas fa-user-tie display-1 text-info"></i>  file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>> -->
+                 <img src="Images/MyPhotos/ph4.jpg" class="card-img-top" alt="...">
+        <!-- <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         
-        </div>
+        </div> -->
   </div>
  
 </div>
 <div class="col-md-4 pt-3" >
-    <div class="card text-center p-4" >
-        <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
-                 <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
+    <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
+        <!-- <i class="fas fa-user-tie display-1 text-info"></i>  file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>> -->
+                 <img src="Images/MyPhotos/ph3.jpg" class="card-img-top" alt="...">
+        <!-- <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         
-        </div>
+        </div> -->
   </div>
  
 </div>
 <div class="col-md-4 pt-3" >
-    <div class="card text-center p-4" >
-        <i class="fas fa-user-tie display-1 text-info"></i>  <!--file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>>
-                 <img src="..." class="card-img-top" alt="...">-->
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="card text-center p-4 bg-secondary text-info cardcss hovereffect" >
+        <!-- <i class="fas fa-user-tie display-1 text-info"></i>  file-invoice fas fa-business-time--<i class="fas fa-briefcase" <i class="fas fa-user-tie"></i>></i>> -->
+                 <img src="Images/MyPhotos/ph7.jpg" class="card-img-top" alt="...">
+        <!-- <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
         
-        </div>
+        </div> -->
     </div>
  
 </div>
@@ -332,14 +402,95 @@
     </div>
 </div>
 </section>
+<section class="secback" id="contact-section">
+<div class="container">
+    <h3  class="text-center p-2 text-secondary">Contact Me</h3>
+   <div class="row">
+       <div class="col-md-12">
+    <form name="contactform" id="contactMe">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <!-- <label for="inputAddress">Name</label> -->
+                        <input type="text" class="form-control" name="fname" id="inputAddress" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <!-- <label for="inputAddress2">Place</label> -->
+                        <input type="text" class="form-control" name="place" placeholder="Place">
+                        </div>
+                </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <!-- <label for="inputCity">Mobile No</label> -->
+            <input type="tel" class="form-control" name="mobile" placeholder="Mobile">
+          </div>
+          <div class="form-group col-md-5">
+            <!-- <label for="inputCity">Mobile No</label> -->
+            <input type="email" class="form-control" name="semail" placeholder="Email">
+          </div>
 
+          <div class="form-group col-md-1">
+            <!-- <br><label for="inputCity">Mobile No</label> -->
+            <!-- <input type="tel" class="form-control" id="inputCity" placeholder="Your Mobile"> -->
+           
+            <button type="submit" id="btnsub" class="btn btn-primary subbtn">Submit</button>
+          </div>
+         
+      
+      </form>
+    </div>
+   </div>
+</div>
+</section>
+
+<footer class="bg-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center text-white pt-3">
+               
+                <a href="https://www.facebook.com/rashi.hiba"><img src="Images/Icons/fb.png" alt="" sizes="32px" srcset=""></a>
+                <a href="https://www.instagram.com/rashihiba"><img src="Images/Icons/insta.png" alt="" sizes="32px" srcset=""></a>
+                <a href="http://"><img src="Images/Icons/lkdn.png" alt="" sizes="32px" srcset=""></a>
+              <p>Copyright</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <!--Bootstrap JS link -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+   
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4f7f0e7aa6.js" crossorigin="anonymous"></script>
 
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+<script>
+    $(document).ready(function(){
+
+$("#contactMe").validate(
+    {
+                rules:{
+                    fname: "required",
+                    place: "required",
+                   semail:{
+                        required:true,
+                        email:true
+                    },
+                    mobile:{
+                        required:true,
+                        digits:true      
+                    }
+                }
+        
+       
+    });
+    // $("#subbtn").click(function(){
+    //     alert("ok");
+    // })
+});
+</script>
 
 </body>
 </html>
