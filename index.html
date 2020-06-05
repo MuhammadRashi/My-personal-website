@@ -8,6 +8,8 @@
     <!--Bootstrap link connecting -->
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="mystyle.css">
+    <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script> -->
     <!-- <script src="myJs.js"></script> -->
     
 </head>
@@ -16,7 +18,7 @@
         <!--first create row -->
 
         <div class="row text-info" >
-            <div class="col-8 col-md-6 pt-3 pl-4">
+            <div class="col-9 col-md-6 pt-3 pl-4">
                 <!-- <h2>Muhammad Rashid</h2> -->
                 <div class="wavy" id="wave" >
                     
@@ -40,7 +42,10 @@
                
             </div>
 
-            <div class="col-md-6 col-4 ml-auto">
+            <div class="col-md-6 col-3 ml-auto">
+
+
+                
                 <nav class="navbar navbar-expand-lg navbar-light">
                     
                     <!-- <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
@@ -52,10 +57,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">  <!-- ml-auto used for align navebar to right-->
                         <li class="nav-item active">
-                          <a class="nav-link text-info" href="#home-section">Home</a>
+                          <a class="nav-link text-info" href="#home-section" data-target=".navbar-collapse.show">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-info" href="#service-section">Services</a>
+                          <a class="nav-link text-info" id="tt" href="#service-section">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-info" href="#experience-section">Experience</a>
@@ -449,7 +454,7 @@
                
                 <a href="https://www.facebook.com/rashi.hiba"><img src="Images/Icons/fb.png" alt="" sizes="32px" srcset=""></a>
                 <a href="https://www.instagram.com/rashihiba"><img src="Images/Icons/insta.png" alt="" sizes="32px" srcset=""></a>
-                <a href="http://"><img src="Images/Icons/lkdn.png" alt="" sizes="32px" srcset=""></a>
+                <a href="https://www.instagram.com/rashihiba"><img src="Images/Icons/lkdn.png" alt="" sizes="32px" srcset=""></a>
               <p>Copyright</p>
             </div>
         </div>
@@ -457,6 +462,8 @@
 </footer>
 
     <!--Bootstrap JS link -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
    
 
@@ -464,9 +471,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4f7f0e7aa6.js" crossorigin="anonymous"></script>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script>
+
+    
     $(document).ready(function(){
 
 $("#contactMe").validate(
@@ -486,8 +494,14 @@ $("#contactMe").validate(
         
        
     });
+
+    $('.navbar-nav li a').on('click', function(){
+    if(!$( this ).hasClass('dropdown-toggle')){
+        $('.navbar-collapse').collapse('hide');
+    }
+});
     // $("#subbtn").click(function(){
-    //     alert("ok");
+    //     alert("ok");// transfer to google form
     // })
 });
 </script>
